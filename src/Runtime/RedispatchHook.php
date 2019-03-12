@@ -94,16 +94,13 @@ class RedispatchHook implements InitializeHookInterface, ConfigAwareInterface, S
         // The options the user provided on the commandline will be included
         // in $redispatchArgs.
         $redispatchOptions = [];
-        if (!TerminalUtils::stdinIsTerminal()) {
-            // Force non-interactive mode for the remote command when redirecting stdin
-            $redispatchOptions['no-interaction'] = true;
-        }
 
         $aliasRecord = $this->siteAliasManager()->getSelf();
         $process = $this->processManager->drushSiteProcess($aliasRecord, $redispatchArgs, $redispatchOptions);
-        $process->setTty($this->getConfig()->get('ssh.tty', $input->isInteractive()));
         if (!TerminalUtils::stdinIsTerminal()) {
             $process->setInput(STDIN);
+        } else {
+            $process->setTty($this->getConfig()->get('ssh.tty', $input->isInteractive()));
         }
         $process->mustRun($process->showRealtime());
 

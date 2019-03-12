@@ -4,10 +4,10 @@ namespace Drush\Utils;
 
 class TerminalUtils
 {
-    public static function stdinIsTerminal()
+    public static function stdinIsTerminal($default = true)
     {
         if (!function_exists('posix_isatty')) {
-            return true;
+            return $default;
         }
 
         return posix_isatty(STDIN);
