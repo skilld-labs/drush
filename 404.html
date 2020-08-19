@@ -11,8 +11,6 @@
         <meta name="description" content="A command line shell and Unix scripting interface for Drupal">
       
       
-        <link rel="canonical" href="http://www.drush.org/">
-      
       
         <meta name="author" content="Moshe Weitzman">
       
@@ -21,7 +19,7 @@
     
     
       
-        <title>Introduction - Drush</title>
+        <title>Drush</title>
       
     
     
@@ -51,12 +49,10 @@
 
     
     
-      
-    
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Drush - Introduction" />
+    <meta property="og:title" content="Drush" />
     <meta property="og:description" content="A command line shell and Unix scripting interface for Drupal" />
-    <meta property="og:url" content="http://www.drush.org/" />
+    <meta property="og:url" content="" />
     <meta property="og:image" content="https://raw.githubusercontent.com/drush-ops/drush/10.x/drush_logo-black.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="218" />
@@ -64,12 +60,10 @@
 
     
     
-      
-    
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@drushcli" />
     <meta name="twitter:creator" content="@weitzman" />
-    <meta name="twitter:title" content="Drush - Introduction" />
+    <meta name="twitter:title" content="Drush" />
     <meta name="twitter:description" content="A command line shell and Unix scripting interface for Drupal" />
     <meta name="twitter:image" content="https://raw.githubusercontent.com/drush-ops/drush/10.x/drush_logo-black.png" />
 
@@ -88,11 +82,6 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#resources" class="md-skip">
-          Skip to content
-        </a>
       
     </div>
     <div data-md-component="announce">
@@ -117,7 +106,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Introduction
+              
             
           </span>
         </div>
@@ -179,9 +168,7 @@
         
           
 
-  
-
-<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
@@ -190,7 +177,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="." class="md-tabs__link md-tabs__link--active">
+        <a href="." class="md-tabs__link">
           Use
         </a>
       
@@ -302,12 +289,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
     
     <label class="md-nav__link" for="nav-1">
       Use
@@ -329,104 +314,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Introduction
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="." title="Introduction" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="." title="Introduction" class="md-nav__link">
       Introduction
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#support" class="md-nav__link">
-    Support
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-of-conduct" class="md-nav__link">
-    Code of Conduct
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#faq" class="md-nav__link">
-    FAQ
-  </a>
-  
-    <nav class="md-nav" aria-label="FAQ">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-does-drush-stand-for" class="md-nav__link">
-    What does Drush stand for?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-do-i-pronounce-drush" class="md-nav__link">
-    How do I pronounce Drush?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#does-drush-have-unit-tests" class="md-nav__link">
-    Does Drush have unit tests?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#credits" class="md-nav__link">
-    Credits
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -2686,148 +2578,12 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#support" class="md-nav__link">
-    Support
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-of-conduct" class="md-nav__link">
-    Code of Conduct
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#faq" class="md-nav__link">
-    FAQ
-  </a>
-  
-    <nav class="md-nav" aria-label="FAQ">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-does-drush-stand-for" class="md-nav__link">
-    What does Drush stand for?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-do-i-pronounce-drush" class="md-nav__link">
-    How do I pronounce Drush?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#does-drush-have-unit-tests" class="md-nav__link">
-    Does Drush have unit tests?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#credits" class="md-nav__link">
-    Credits
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-                
-                  <a href="https://github.com/drush-ops/drush/blob/10.x/README.md" title="Edit this page" class="md-content__button md-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-                  </a>
-                
-                
-                  
-                
-                
-                  <h1>Introduction</h1>
-                
-                <p>Drush is a command line shell and Unix scripting interface for Drupal. Drush core ships with lots of <a href="commands/10.x/all/">useful commands</a> for interacting with code like modules/themes/profiles. Similarly, it runs update.php, executes SQL queries and DB migrations, and misc utilities like run cron or clear cache. Developers love the <a href="commands/10.x/generate/">generate command</a>, which jump starts your coding project by writing ready-to-customize PHP and YML files. Drush can be extended by <a href="https://www.drupal.org/project/project_module?f[2]=im_vid_3%3A4654">3rd party commandfiles</a>.</p>
-<p><a href="https://packagist.org/packages/drush/drush"><img alt="Latest Stable Version" src="https://poser.pugx.org/drush/drush/v/stable.png" /></a> <a href="https://packagist.org/packages/drush/drush"><img alt="Total Downloads" src="https://poser.pugx.org/drush/drush/downloads.png" /></a> <a href="https://packagist.org/packages/drush/drush"><img alt="License" src="https://poser.pugx.org/drush/drush/license.png" /></a> <a href="https://circleci.com/gh/drush-ops/drush"><img src="https://circleci.com/gh/drush-ops/drush.svg?style=shield"></a> <a href="https://twitter.com/intent/user?screen_name=DrushCli"><img alt="Twitter" src="https://img.shields.io/badge/Twitter-%40DrushCli-blue.svg" /></a></p>
-<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://www.drush.org/install">Installing and Upgrading</a> (<a href="https://docs.drush.org/en/8.x/install/">Drush 8</a>)</li>
-<li><a href="https://www.drush.org/usage">General Documentation</a> (<a href="https://docs.drush.org/en/8.x/install/">Drush 8</a>)</li>
-<li><a href="https://www.drush.org/commands/10.x/all">Drush Commands</a></li>
-<li><a href="https://www.drush.org/api/10.x">API Documentation</a></li>
-<li><a href="https://packagist.org/search/?type=drupal-drush">Drush packages available via Composer</a></li>
-<li><a href="https://www.drupal.org/project/project_module?f[2]=im_vid_3%3A4654&amp;solrsort=ds_project_latest_release+desc">A list of modules that include Drush integration</a></li>
-<li>Drush comes with a <a href="https://github.com/drush-ops/drush/blob/10.x/tests/README.md">full test suite</a> powered by <a href="https://github.com/sebastianbergmann/phpunit">PHPUnit</a>. Each commit gets tested by our CI bots.</li>
-</ul>
-<h2 id="support">Support<a class="headerlink" href="#support" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Post support requests to <a href="http://drupal.stackexchange.com/questions/tagged/drush">Drupal Answers</a>. Tag question with 'drush'.</li>
-<li>Report bugs and request features in the <a href="https://github.com/drush-ops/drush/issues">GitHub Drush Issue Queue</a>.</li>
-<li>Use pull requests (PRs) to contribute to Drush.</li>
-</ul>
-<h2 id="code-of-conduct">Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Permanent link">&para;</a></h2>
-<p>The Drush project expects all participants to abide by the <a href="https://www.drupal.org/dcoc">Drupal Code of Conduct</a>.</p>
-<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
-<h4 id="what-does-drush-stand-for">What does <em>Drush</em> stand for?<a class="headerlink" href="#what-does-drush-stand-for" title="Permanent link">&para;</a></h4>
-<p>A: The Drupal Shell.</p>
-<h4 id="how-do-i-pronounce-drush">How do I pronounce Drush?<a class="headerlink" href="#how-do-i-pronounce-drush" title="Permanent link">&para;</a></h4>
-<p>Some people pronounce the <em>dru</em> with a long 'u' like Dr<em>u</em>pal. Fidelity points
-go to them, but they are in the minority. Most pronounce Drush so that it
-rhymes with hush, rush, flush, etc. This is the preferred pronunciation.</p>
-<h4 id="does-drush-have-unit-tests">Does Drush have unit tests?<a class="headerlink" href="#does-drush-have-unit-tests" title="Permanent link">&para;</a></h4>
-<p>Drush has an excellent suite of unit tests. See <a href="https://github.com/drush-ops/drush/blob/10.x/tests/README.md">tests/README.md</a> for more information.</p>
-<h2 id="credits">Credits<a class="headerlink" href="#credits" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Maintained by <a href="http://drupal.org/moshe">Moshe Weitzman</a> with much help from the folks listed at <a href="https://github.com/orgs/drush-ops/people">https://github.com/orgs/drush-ops/people</a>.</li>
-<li>Originally developed by <a href="http://bendiken.net">Arto Bendiken</a> for Drupal 4.7.</li>
-<li>Redesigned by <a href="http://unbiskant.org">Franz Heinzmann</a> in May 2007 for Drupal 5.</li>
-<li>Thanks to <a href="https://www.jetbrains.com">JetBrains</a> for <a href="https://www.jetbrains.com/buy/opensource/">supporting this project and open source software</a>.</li>
-</ul>
-<p><img alt="Drush Logo" src="drush_logo-black.png" />
-<a href="https://www.jetbrains.com/phpstorm/"><img alt="PhpStorm Logo" src="misc/icon_PhpStorm.png" /></a></p>
-                
-                  
-                
-              
+  <h1>404 - Not found</h1>
+
               
                 
 
@@ -2840,27 +2596,6 @@ rhymes with hush, rush, flush, etc. This is the preferred pronunciation.</p>
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-        
-          <a href="install/" title="Install" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Install
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -2914,7 +2649,7 @@ rhymes with hush, rush, flush, etc. This is the preferred pronunciation.</p>
       
       <script>
         app = initialize({
-          base: ".",
+          base: "",
           features: ["tabs"],
           search: Object.assign({
             worker: "assets/javascripts/worker/search.fae956e7.min.js"

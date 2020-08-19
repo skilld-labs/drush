@@ -11,23 +11,23 @@
         <meta name="description" content="A command line shell and Unix scripting interface for Drupal">
       
       
-        <link rel="canonical" href="http://www.drush.org/">
+        <link rel="canonical" href="http://www.drush.org/commands/10.x/config_export/">
       
       
         <meta name="author" content="Moshe Weitzman">
       
-      <link rel="shortcut icon" href="img/favicon.ico">
+      <link rel="shortcut icon" href="../../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.7">
     
     
       
-        <title>Introduction - Drush</title>
+        <title>config:export - Drush</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.b8ac9624.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.b8ac9624.min.css">
       
-        <link rel="stylesheet" href="assets/stylesheets/palette.28f3ef9a.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.28f3ef9a.min.css">
       
       
     
@@ -41,7 +41,7 @@
     
     
     
-      <link rel="stylesheet" href="css/extra.readthedocs.css">
+      <link rel="stylesheet" href="../../../css/extra.readthedocs.css">
     
     
       
@@ -54,9 +54,9 @@
       
     
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Drush - Introduction" />
+    <meta property="og:title" content="Drush - config:export" />
     <meta property="og:description" content="A command line shell and Unix scripting interface for Drupal" />
-    <meta property="og:url" content="http://www.drush.org/" />
+    <meta property="og:url" content="http://www.drush.org/commands/10.x/config_export/" />
     <meta property="og:image" content="https://raw.githubusercontent.com/drush-ops/drush/10.x/drush_logo-black.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="218" />
@@ -69,7 +69,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@drushcli" />
     <meta name="twitter:creator" content="@weitzman" />
-    <meta name="twitter:title" content="Drush - Introduction" />
+    <meta name="twitter:title" content="Drush - config:export" />
     <meta name="twitter:description" content="A command line shell and Unix scripting interface for Drupal" />
     <meta name="twitter:image" content="https://raw.githubusercontent.com/drush-ops/drush/10.x/drush_logo-black.png" />
 
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#resources" class="md-skip">
+        <a href="#configexport" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="http://www.drush.org" title="Drush" class="md-header-nav__button md-logo" aria-label="Drush">
       
-  <img src="drush_logo-black.png" alt="logo">
+  <img src="../../../drush_logo-black.png" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -117,7 +117,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Introduction
+              config:export
             
           </span>
         </div>
@@ -190,7 +190,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="." class="md-tabs__link md-tabs__link--active">
+        <a href="../../.." class="md-tabs__link">
           Use
         </a>
       
@@ -203,7 +203,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="commands/" class="md-tabs__link">
+        <a href="../../" class="md-tabs__link">
           Author
         </a>
       
@@ -216,7 +216,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="examples/example.drush.yml/" class="md-tabs__link">
+        <a href="../../../examples/example.drush.yml/" class="md-tabs__link">
           Examples
         </a>
       
@@ -229,7 +229,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="contribute/CONTRIBUTING/" class="md-tabs__link">
+        <a href="../../../contribute/CONTRIBUTING/" class="md-tabs__link">
           Contribute
         </a>
       
@@ -246,7 +246,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="commands/10.x/all/" class="md-tabs__link">
+        <a href="../all/" class="md-tabs__link">
           Commands
         </a>
       
@@ -277,7 +277,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="http://www.drush.org" title="Drush" class="md-nav__button md-logo" aria-label="Drush">
       
-  <img src="drush_logo-black.png" alt="logo">
+  <img src="../../../drush_logo-black.png" alt="logo">
 
     </a>
     Drush
@@ -302,12 +302,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
     
     <label class="md-nav__link" for="nav-1">
       Use
@@ -329,104 +327,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Introduction
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="." title="Introduction" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../.." title="Introduction" class="md-nav__link">
       Introduction
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#support" class="md-nav__link">
-    Support
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-of-conduct" class="md-nav__link">
-    Code of Conduct
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#faq" class="md-nav__link">
-    FAQ
-  </a>
-  
-    <nav class="md-nav" aria-label="FAQ">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-does-drush-stand-for" class="md-nav__link">
-    What does Drush stand for?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-do-i-pronounce-drush" class="md-nav__link">
-    How do I pronounce Drush?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#does-drush-have-unit-tests" class="md-nav__link">
-    Does Drush have unit tests?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#credits" class="md-nav__link">
-    Credits
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -436,7 +341,7 @@
 
 
   <li class="md-nav__item">
-    <a href="install/" title="Install" class="md-nav__link">
+    <a href="../../../install/" title="Install" class="md-nav__link">
       Install
     </a>
   </li>
@@ -448,7 +353,7 @@
 
 
   <li class="md-nav__item">
-    <a href="usage/" title="Usage" class="md-nav__link">
+    <a href="../../../usage/" title="Usage" class="md-nav__link">
       Usage
     </a>
   </li>
@@ -460,7 +365,7 @@
 
 
   <li class="md-nav__item">
-    <a href="cron/" title="Cron" class="md-nav__link">
+    <a href="../../../cron/" title="Cron" class="md-nav__link">
       Cron
     </a>
   </li>
@@ -472,7 +377,7 @@
 
 
   <li class="md-nav__item">
-    <a href="using-drush-configuration/" title="Drush configuration" class="md-nav__link">
+    <a href="../../../using-drush-configuration/" title="Drush configuration" class="md-nav__link">
       Drush configuration
     </a>
   </li>
@@ -484,7 +389,7 @@
 
 
   <li class="md-nav__item">
-    <a href="config-exporting/" title="Drupal configuration" class="md-nav__link">
+    <a href="../../../config-exporting/" title="Drupal configuration" class="md-nav__link">
       Drupal configuration
     </a>
   </li>
@@ -496,7 +401,7 @@
 
 
   <li class="md-nav__item">
-    <a href="output-formats-filters/" title="Output Formats, Fields & Filters" class="md-nav__link">
+    <a href="../../../output-formats-filters/" title="Output Formats, Fields & Filters" class="md-nav__link">
       Output Formats, Fields & Filters
     </a>
   </li>
@@ -508,7 +413,7 @@
 
 
   <li class="md-nav__item">
-    <a href="repl/" title="REPL (a custom shell for Drupal)" class="md-nav__link">
+    <a href="../../../repl/" title="REPL (a custom shell for Drupal)" class="md-nav__link">
       REPL (a custom shell for Drupal)
     </a>
   </li>
@@ -520,7 +425,7 @@
 
 
   <li class="md-nav__item">
-    <a href="deploycommand/" title="Deploy" class="md-nav__link">
+    <a href="../../../deploycommand/" title="Deploy" class="md-nav__link">
       Deploy
     </a>
   </li>
@@ -562,7 +467,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/" title="Command Authoring" class="md-nav__link">
+    <a href="../../" title="Command Authoring" class="md-nav__link">
       Command Authoring
     </a>
   </li>
@@ -574,7 +479,7 @@
 
 
   <li class="md-nav__item">
-    <a href="hooks/" title="Hooks" class="md-nav__link">
+    <a href="../../../hooks/" title="Hooks" class="md-nav__link">
       Hooks
     </a>
   </li>
@@ -586,7 +491,7 @@
 
 
   <li class="md-nav__item">
-    <a href="dependency-injection/" title="Dependency injection" class="md-nav__link">
+    <a href="../../../dependency-injection/" title="Dependency injection" class="md-nav__link">
       Dependency injection
     </a>
   </li>
@@ -598,7 +503,7 @@
 
 
   <li class="md-nav__item">
-    <a href="io/" title="Input / Output" class="md-nav__link">
+    <a href="../../../io/" title="Input / Output" class="md-nav__link">
       Input / Output
     </a>
   </li>
@@ -610,7 +515,7 @@
 
 
   <li class="md-nav__item">
-    <a href="generators/" title="Generator Authoring" class="md-nav__link">
+    <a href="../../../generators/" title="Generator Authoring" class="md-nav__link">
       Generator Authoring
     </a>
   </li>
@@ -622,7 +527,7 @@
 
 
   <li class="md-nav__item">
-    <a href="bootstrap/" title="Bootstrap" class="md-nav__link">
+    <a href="../../../bootstrap/" title="Bootstrap" class="md-nav__link">
       Bootstrap
     </a>
   </li>
@@ -634,7 +539,7 @@
 
 
   <li class="md-nav__item">
-    <a href="site-alias-manager/" title="Site Alias Manager" class="md-nav__link">
+    <a href="../../../site-alias-manager/" title="Site Alias Manager" class="md-nav__link">
       Site Alias Manager
     </a>
   </li>
@@ -676,7 +581,7 @@
 
 
   <li class="md-nav__item">
-    <a href="examples/example.drush.yml/" title="drush.yml" class="md-nav__link">
+    <a href="../../../examples/example.drush.yml/" title="drush.yml" class="md-nav__link">
       drush.yml
     </a>
   </li>
@@ -688,7 +593,7 @@
 
 
   <li class="md-nav__item">
-    <a href="examples/example.site.yml/" title="site.yml" class="md-nav__link">
+    <a href="../../../examples/example.site.yml/" title="site.yml" class="md-nav__link">
       site.yml
     </a>
   </li>
@@ -700,7 +605,7 @@
 
 
   <li class="md-nav__item">
-    <a href="examples/helloworld.script/" title="Helloworld.script" class="md-nav__link">
+    <a href="../../../examples/helloworld.script/" title="Helloworld.script" class="md-nav__link">
       Helloworld.script
     </a>
   </li>
@@ -724,7 +629,7 @@
 
 
   <li class="md-nav__item">
-    <a href="examples/ArtCommands.php/" title="ArtCommands.php" class="md-nav__link">
+    <a href="../../../examples/ArtCommands.php/" title="ArtCommands.php" class="md-nav__link">
       ArtCommands.php
     </a>
   </li>
@@ -736,7 +641,7 @@
 
 
   <li class="md-nav__item">
-    <a href="examples/PolicyCommands.php/" title="PolicyCommands.php" class="md-nav__link">
+    <a href="../../../examples/PolicyCommands.php/" title="PolicyCommands.php" class="md-nav__link">
       PolicyCommands.php
     </a>
   </li>
@@ -748,7 +653,7 @@
 
 
   <li class="md-nav__item">
-    <a href="examples/SiteAliasAlterCommands.php/" title="SiteAliasAlterCommands.php" class="md-nav__link">
+    <a href="../../../examples/SiteAliasAlterCommands.php/" title="SiteAliasAlterCommands.php" class="md-nav__link">
       SiteAliasAlterCommands.php
     </a>
   </li>
@@ -760,7 +665,7 @@
 
 
   <li class="md-nav__item">
-    <a href="examples/SyncViaHttpCommands.php/" title="SyncViaHttpCommands.php" class="md-nav__link">
+    <a href="../../../examples/SyncViaHttpCommands.php/" title="SyncViaHttpCommands.php" class="md-nav__link">
       SyncViaHttpCommands.php
     </a>
   </li>
@@ -772,7 +677,7 @@
 
 
   <li class="md-nav__item">
-    <a href="examples/XkcdCommands.php/" title="XkcdCommands.php" class="md-nav__link">
+    <a href="../../../examples/XkcdCommands.php/" title="XkcdCommands.php" class="md-nav__link">
       XkcdCommands.php
     </a>
   </li>
@@ -784,7 +689,7 @@
 
 
   <li class="md-nav__item">
-    <a href="examples/example.bashrc/" title=".bashrc" class="md-nav__link">
+    <a href="../../../examples/example.bashrc/" title=".bashrc" class="md-nav__link">
       .bashrc
     </a>
   </li>
@@ -796,7 +701,7 @@
 
 
   <li class="md-nav__item">
-    <a href="examples/example.prompt.sh/" title="prompt.sh" class="md-nav__link">
+    <a href="../../../examples/example.prompt.sh/" title="prompt.sh" class="md-nav__link">
       prompt.sh
     </a>
   </li>
@@ -808,7 +713,7 @@
 
 
   <li class="md-nav__item">
-    <a href="examples/git-bisect.example.sh/" title="git-bisect.sh" class="md-nav__link">
+    <a href="../../../examples/git-bisect.example.sh/" title="git-bisect.sh" class="md-nav__link">
       git-bisect.sh
     </a>
   </li>
@@ -850,7 +755,7 @@
 
 
   <li class="md-nav__item">
-    <a href="contribute/CONTRIBUTING/" title="Guidelines" class="md-nav__link">
+    <a href="../../../contribute/CONTRIBUTING/" title="Guidelines" class="md-nav__link">
       Guidelines
     </a>
   </li>
@@ -862,7 +767,7 @@
 
 
   <li class="md-nav__item">
-    <a href="contribute/" title="Unish" class="md-nav__link">
+    <a href="../../../contribute/" title="Unish" class="md-nav__link">
       Unish
     </a>
   </li>
@@ -877,10 +782,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       Commands
@@ -929,7 +836,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/all/" title="all" class="md-nav__link">
+    <a href="../all/" title="all" class="md-nav__link">
       all
     </a>
   </li>
@@ -941,7 +848,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/browse/" title="browse" class="md-nav__link">
+    <a href="../browse/" title="browse" class="md-nav__link">
       browse
     </a>
   </li>
@@ -953,7 +860,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/deploy/" title="deploy" class="md-nav__link">
+    <a href="../deploy/" title="deploy" class="md-nav__link">
       deploy
     </a>
   </li>
@@ -965,7 +872,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/drupal_directory/" title="drupal:directory" class="md-nav__link">
+    <a href="../drupal_directory/" title="drupal:directory" class="md-nav__link">
       drupal:directory
     </a>
   </li>
@@ -977,7 +884,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/generate/" title="generate" class="md-nav__link">
+    <a href="../generate/" title="generate" class="md-nav__link">
       generate
     </a>
   </li>
@@ -989,7 +896,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/help/" title="help" class="md-nav__link">
+    <a href="../help/" title="help" class="md-nav__link">
       help
     </a>
   </li>
@@ -1001,7 +908,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/jn_get/" title="jn:get" class="md-nav__link">
+    <a href="../jn_get/" title="jn:get" class="md-nav__link">
       jn:get
     </a>
   </li>
@@ -1013,7 +920,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/list/" title="list" class="md-nav__link">
+    <a href="../list/" title="list" class="md-nav__link">
       list
     </a>
   </li>
@@ -1025,7 +932,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/mk_docs/" title="mk:docs" class="md-nav__link">
+    <a href="../mk_docs/" title="mk:docs" class="md-nav__link">
       mk:docs
     </a>
   </li>
@@ -1037,7 +944,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/runserver/" title="runserver" class="md-nav__link">
+    <a href="../runserver/" title="runserver" class="md-nav__link">
       runserver
     </a>
   </li>
@@ -1049,7 +956,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/updatedb/" title="updatedb" class="md-nav__link">
+    <a href="../updatedb/" title="updatedb" class="md-nav__link">
       updatedb
     </a>
   </li>
@@ -1061,7 +968,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/updatedb_status/" title="updatedb:status" class="md-nav__link">
+    <a href="../updatedb_status/" title="updatedb:status" class="md-nav__link">
       updatedb:status
     </a>
   </li>
@@ -1073,7 +980,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/version/" title="version" class="md-nav__link">
+    <a href="../version/" title="version" class="md-nav__link">
       version
     </a>
   </li>
@@ -1115,7 +1022,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/cache_clear/" title="cache:clear" class="md-nav__link">
+    <a href="../cache_clear/" title="cache:clear" class="md-nav__link">
       cache:clear
     </a>
   </li>
@@ -1127,7 +1034,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/cache_get/" title="cache:get" class="md-nav__link">
+    <a href="../cache_get/" title="cache:get" class="md-nav__link">
       cache:get
     </a>
   </li>
@@ -1139,7 +1046,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/cache_rebuild/" title="cache:rebuild" class="md-nav__link">
+    <a href="../cache_rebuild/" title="cache:rebuild" class="md-nav__link">
       cache:rebuild
     </a>
   </li>
@@ -1151,7 +1058,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/cache_set/" title="cache:set" class="md-nav__link">
+    <a href="../cache_set/" title="cache:set" class="md-nav__link">
       cache:set
     </a>
   </li>
@@ -1163,7 +1070,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/cache_tags/" title="cache:tags" class="md-nav__link">
+    <a href="../cache_tags/" title="cache:tags" class="md-nav__link">
       cache:tags
     </a>
   </li>
@@ -1178,10 +1085,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3" checked>
     
     <label class="md-nav__link" for="nav-5-3">
       config
@@ -1205,7 +1114,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/config_delete/" title="config:delete" class="md-nav__link">
+    <a href="../config_delete/" title="config:delete" class="md-nav__link">
       config:delete
     </a>
   </li>
@@ -1217,7 +1126,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/config_edit/" title="config:edit" class="md-nav__link">
+    <a href="../config_edit/" title="config:edit" class="md-nav__link">
       config:edit
     </a>
   </li>
@@ -1227,11 +1136,74 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="commands/10.x/config_export/" title="config:export" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        config:export
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="config:export" class="md-nav__link md-nav__link--active">
       config:export
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aliases" class="md-nav__link">
+    Aliases
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1241,7 +1213,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/config_get/" title="config:get" class="md-nav__link">
+    <a href="../config_get/" title="config:get" class="md-nav__link">
       config:get
     </a>
   </li>
@@ -1253,7 +1225,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/config_import/" title="config:import" class="md-nav__link">
+    <a href="../config_import/" title="config:import" class="md-nav__link">
       config:import
     </a>
   </li>
@@ -1265,7 +1237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/config_pull/" title="config:pull" class="md-nav__link">
+    <a href="../config_pull/" title="config:pull" class="md-nav__link">
       config:pull
     </a>
   </li>
@@ -1277,7 +1249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/config_set/" title="config:set" class="md-nav__link">
+    <a href="../config_set/" title="config:set" class="md-nav__link">
       config:set
     </a>
   </li>
@@ -1289,7 +1261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/config_status/" title="config:status" class="md-nav__link">
+    <a href="../config_status/" title="config:status" class="md-nav__link">
       config:status
     </a>
   </li>
@@ -1331,7 +1303,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/core_cron/" title="core:cron" class="md-nav__link">
+    <a href="../core_cron/" title="core:cron" class="md-nav__link">
       core:cron
     </a>
   </li>
@@ -1343,7 +1315,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/core_edit/" title="core:edit" class="md-nav__link">
+    <a href="../core_edit/" title="core:edit" class="md-nav__link">
       core:edit
     </a>
   </li>
@@ -1355,7 +1327,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/core_init/" title="core:init" class="md-nav__link">
+    <a href="../core_init/" title="core:init" class="md-nav__link">
       core:init
     </a>
   </li>
@@ -1367,7 +1339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/core_requirements/" title="core:requirements" class="md-nav__link">
+    <a href="../core_requirements/" title="core:requirements" class="md-nav__link">
       core:requirements
     </a>
   </li>
@@ -1379,7 +1351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/core_rsync/" title="core:rsync" class="md-nav__link">
+    <a href="../core_rsync/" title="core:rsync" class="md-nav__link">
       core:rsync
     </a>
   </li>
@@ -1391,7 +1363,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/core_status/" title="core:status" class="md-nav__link">
+    <a href="../core_status/" title="core:status" class="md-nav__link">
       core:status
     </a>
   </li>
@@ -1403,7 +1375,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/core_topic/" title="core:topic" class="md-nav__link">
+    <a href="../core_topic/" title="core:topic" class="md-nav__link">
       core:topic
     </a>
   </li>
@@ -1445,7 +1417,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/deploy_hook/" title="deploy:hook" class="md-nav__link">
+    <a href="../deploy_hook/" title="deploy:hook" class="md-nav__link">
       deploy:hook
     </a>
   </li>
@@ -1457,7 +1429,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/deploy_hook-status/" title="deploy:hook-status" class="md-nav__link">
+    <a href="../deploy_hook-status/" title="deploy:hook-status" class="md-nav__link">
       deploy:hook-status
     </a>
   </li>
@@ -1499,7 +1471,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/entity_delete/" title="entity:delete" class="md-nav__link">
+    <a href="../entity_delete/" title="entity:delete" class="md-nav__link">
       entity:delete
     </a>
   </li>
@@ -1511,7 +1483,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/entity_updates/" title="entity:updates" class="md-nav__link">
+    <a href="../entity_updates/" title="entity:updates" class="md-nav__link">
       entity:updates
     </a>
   </li>
@@ -1553,7 +1525,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/image_derive/" title="image:derive" class="md-nav__link">
+    <a href="../image_derive/" title="image:derive" class="md-nav__link">
       image:derive
     </a>
   </li>
@@ -1565,7 +1537,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/image_flush/" title="image:flush" class="md-nav__link">
+    <a href="../image_flush/" title="image:flush" class="md-nav__link">
       image:flush
     </a>
   </li>
@@ -1607,7 +1579,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/locale_check/" title="locale:check" class="md-nav__link">
+    <a href="../locale_check/" title="locale:check" class="md-nav__link">
       locale:check
     </a>
   </li>
@@ -1619,7 +1591,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/locale_export/" title="locale:export" class="md-nav__link">
+    <a href="../locale_export/" title="locale:export" class="md-nav__link">
       locale:export
     </a>
   </li>
@@ -1631,7 +1603,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/locale_import/" title="locale:import" class="md-nav__link">
+    <a href="../locale_import/" title="locale:import" class="md-nav__link">
       locale:import
     </a>
   </li>
@@ -1643,7 +1615,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/locale_update/" title="locale:update" class="md-nav__link">
+    <a href="../locale_update/" title="locale:update" class="md-nav__link">
       locale:update
     </a>
   </li>
@@ -1685,7 +1657,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/php_cli/" title="php:cli" class="md-nav__link">
+    <a href="../php_cli/" title="php:cli" class="md-nav__link">
       php:cli
     </a>
   </li>
@@ -1697,7 +1669,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/php_eval/" title="php:eval" class="md-nav__link">
+    <a href="../php_eval/" title="php:eval" class="md-nav__link">
       php:eval
     </a>
   </li>
@@ -1709,7 +1681,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/php_script/" title="php:script" class="md-nav__link">
+    <a href="../php_script/" title="php:script" class="md-nav__link">
       php:script
     </a>
   </li>
@@ -1751,7 +1723,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/pm_enable/" title="pm:enable" class="md-nav__link">
+    <a href="../pm_enable/" title="pm:enable" class="md-nav__link">
       pm:enable
     </a>
   </li>
@@ -1763,7 +1735,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/pm_list/" title="pm:list" class="md-nav__link">
+    <a href="../pm_list/" title="pm:list" class="md-nav__link">
       pm:list
     </a>
   </li>
@@ -1775,7 +1747,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/pm_security/" title="pm:security" class="md-nav__link">
+    <a href="../pm_security/" title="pm:security" class="md-nav__link">
       pm:security
     </a>
   </li>
@@ -1787,7 +1759,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/pm_security-php/" title="pm:security-php" class="md-nav__link">
+    <a href="../pm_security-php/" title="pm:security-php" class="md-nav__link">
       pm:security-php
     </a>
   </li>
@@ -1799,7 +1771,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/pm_uninstall/" title="pm:uninstall" class="md-nav__link">
+    <a href="../pm_uninstall/" title="pm:uninstall" class="md-nav__link">
       pm:uninstall
     </a>
   </li>
@@ -1841,7 +1813,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/queue_delete/" title="queue:delete" class="md-nav__link">
+    <a href="../queue_delete/" title="queue:delete" class="md-nav__link">
       queue:delete
     </a>
   </li>
@@ -1853,7 +1825,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/queue_list/" title="queue:list" class="md-nav__link">
+    <a href="../queue_list/" title="queue:list" class="md-nav__link">
       queue:list
     </a>
   </li>
@@ -1865,7 +1837,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/queue_run/" title="queue:run" class="md-nav__link">
+    <a href="../queue_run/" title="queue:run" class="md-nav__link">
       queue:run
     </a>
   </li>
@@ -1907,7 +1879,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/role_create/" title="role:create" class="md-nav__link">
+    <a href="../role_create/" title="role:create" class="md-nav__link">
       role:create
     </a>
   </li>
@@ -1919,7 +1891,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/role_delete/" title="role:delete" class="md-nav__link">
+    <a href="../role_delete/" title="role:delete" class="md-nav__link">
       role:delete
     </a>
   </li>
@@ -1931,7 +1903,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/role_list/" title="role:list" class="md-nav__link">
+    <a href="../role_list/" title="role:list" class="md-nav__link">
       role:list
     </a>
   </li>
@@ -1943,7 +1915,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/role_perm_add/" title="role:perm:add" class="md-nav__link">
+    <a href="../role_perm_add/" title="role:perm:add" class="md-nav__link">
       role:perm:add
     </a>
   </li>
@@ -1955,7 +1927,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/role_perm_remove/" title="role:perm:remove" class="md-nav__link">
+    <a href="../role_perm_remove/" title="role:perm:remove" class="md-nav__link">
       role:perm:remove
     </a>
   </li>
@@ -1997,7 +1969,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/site_alias/" title="site:alias" class="md-nav__link">
+    <a href="../site_alias/" title="site:alias" class="md-nav__link">
       site:alias
     </a>
   </li>
@@ -2009,7 +1981,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/site_alias-convert/" title="site:alias-convert" class="md-nav__link">
+    <a href="../site_alias-convert/" title="site:alias-convert" class="md-nav__link">
       site:alias-convert
     </a>
   </li>
@@ -2021,7 +1993,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/site_install/" title="site:install" class="md-nav__link">
+    <a href="../site_install/" title="site:install" class="md-nav__link">
       site:install
     </a>
   </li>
@@ -2033,7 +2005,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/site_set/" title="site:set" class="md-nav__link">
+    <a href="../site_set/" title="site:set" class="md-nav__link">
       site:set
     </a>
   </li>
@@ -2045,7 +2017,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/site_ssh/" title="site:ssh" class="md-nav__link">
+    <a href="../site_ssh/" title="site:ssh" class="md-nav__link">
       site:ssh
     </a>
   </li>
@@ -2087,7 +2059,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/sql_cli/" title="sql:cli" class="md-nav__link">
+    <a href="../sql_cli/" title="sql:cli" class="md-nav__link">
       sql:cli
     </a>
   </li>
@@ -2099,7 +2071,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/sql_connect/" title="sql:connect" class="md-nav__link">
+    <a href="../sql_connect/" title="sql:connect" class="md-nav__link">
       sql:connect
     </a>
   </li>
@@ -2111,7 +2083,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/sql_create/" title="sql:create" class="md-nav__link">
+    <a href="../sql_create/" title="sql:create" class="md-nav__link">
       sql:create
     </a>
   </li>
@@ -2123,7 +2095,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/sql_drop/" title="sql:drop" class="md-nav__link">
+    <a href="../sql_drop/" title="sql:drop" class="md-nav__link">
       sql:drop
     </a>
   </li>
@@ -2135,7 +2107,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/sql_dump/" title="sql:dump" class="md-nav__link">
+    <a href="../sql_dump/" title="sql:dump" class="md-nav__link">
       sql:dump
     </a>
   </li>
@@ -2147,7 +2119,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/sql_query/" title="sql:query" class="md-nav__link">
+    <a href="../sql_query/" title="sql:query" class="md-nav__link">
       sql:query
     </a>
   </li>
@@ -2159,7 +2131,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/sql_sanitize/" title="sql:sanitize" class="md-nav__link">
+    <a href="../sql_sanitize/" title="sql:sanitize" class="md-nav__link">
       sql:sanitize
     </a>
   </li>
@@ -2171,7 +2143,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/sql_sync/" title="sql:sync" class="md-nav__link">
+    <a href="../sql_sync/" title="sql:sync" class="md-nav__link">
       sql:sync
     </a>
   </li>
@@ -2213,7 +2185,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/state_delete/" title="state:delete" class="md-nav__link">
+    <a href="../state_delete/" title="state:delete" class="md-nav__link">
       state:delete
     </a>
   </li>
@@ -2225,7 +2197,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/state_get/" title="state:get" class="md-nav__link">
+    <a href="../state_get/" title="state:get" class="md-nav__link">
       state:get
     </a>
   </li>
@@ -2237,7 +2209,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/state_set/" title="state:set" class="md-nav__link">
+    <a href="../state_set/" title="state:set" class="md-nav__link">
       state:set
     </a>
   </li>
@@ -2279,7 +2251,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/theme_enable/" title="theme:enable" class="md-nav__link">
+    <a href="../theme_enable/" title="theme:enable" class="md-nav__link">
       theme:enable
     </a>
   </li>
@@ -2291,7 +2263,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/theme_uninstall/" title="theme:uninstall" class="md-nav__link">
+    <a href="../theme_uninstall/" title="theme:uninstall" class="md-nav__link">
       theme:uninstall
     </a>
   </li>
@@ -2333,7 +2305,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/twig_compile/" title="twig:compile" class="md-nav__link">
+    <a href="../twig_compile/" title="twig:compile" class="md-nav__link">
       twig:compile
     </a>
   </li>
@@ -2345,7 +2317,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/twig_unused/" title="twig:unused" class="md-nav__link">
+    <a href="../twig_unused/" title="twig:unused" class="md-nav__link">
       twig:unused
     </a>
   </li>
@@ -2387,7 +2359,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/user_block/" title="user:block" class="md-nav__link">
+    <a href="../user_block/" title="user:block" class="md-nav__link">
       user:block
     </a>
   </li>
@@ -2399,7 +2371,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/user_cancel/" title="user:cancel" class="md-nav__link">
+    <a href="../user_cancel/" title="user:cancel" class="md-nav__link">
       user:cancel
     </a>
   </li>
@@ -2411,7 +2383,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/user_create/" title="user:create" class="md-nav__link">
+    <a href="../user_create/" title="user:create" class="md-nav__link">
       user:create
     </a>
   </li>
@@ -2423,7 +2395,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/user_information/" title="user:information" class="md-nav__link">
+    <a href="../user_information/" title="user:information" class="md-nav__link">
       user:information
     </a>
   </li>
@@ -2435,7 +2407,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/user_login/" title="user:login" class="md-nav__link">
+    <a href="../user_login/" title="user:login" class="md-nav__link">
       user:login
     </a>
   </li>
@@ -2447,7 +2419,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/user_password/" title="user:password" class="md-nav__link">
+    <a href="../user_password/" title="user:password" class="md-nav__link">
       user:password
     </a>
   </li>
@@ -2459,7 +2431,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/user_role_add/" title="user:role:add" class="md-nav__link">
+    <a href="../user_role_add/" title="user:role:add" class="md-nav__link">
       user:role:add
     </a>
   </li>
@@ -2471,7 +2443,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/user_role_remove/" title="user:role:remove" class="md-nav__link">
+    <a href="../user_role_remove/" title="user:role:remove" class="md-nav__link">
       user:role:remove
     </a>
   </li>
@@ -2483,7 +2455,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/user_unblock/" title="user:unblock" class="md-nav__link">
+    <a href="../user_unblock/" title="user:unblock" class="md-nav__link">
       user:unblock
     </a>
   </li>
@@ -2525,7 +2497,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/views_analyze/" title="views:analyze" class="md-nav__link">
+    <a href="../views_analyze/" title="views:analyze" class="md-nav__link">
       views:analyze
     </a>
   </li>
@@ -2537,7 +2509,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/views_dev/" title="views:dev" class="md-nav__link">
+    <a href="../views_dev/" title="views:dev" class="md-nav__link">
       views:dev
     </a>
   </li>
@@ -2549,7 +2521,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/views_disable/" title="views:disable" class="md-nav__link">
+    <a href="../views_disable/" title="views:disable" class="md-nav__link">
       views:disable
     </a>
   </li>
@@ -2561,7 +2533,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/views_enable/" title="views:enable" class="md-nav__link">
+    <a href="../views_enable/" title="views:enable" class="md-nav__link">
       views:enable
     </a>
   </li>
@@ -2573,7 +2545,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/views_execute/" title="views:execute" class="md-nav__link">
+    <a href="../views_execute/" title="views:execute" class="md-nav__link">
       views:execute
     </a>
   </li>
@@ -2585,7 +2557,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/views_list/" title="views:list" class="md-nav__link">
+    <a href="../views_list/" title="views:list" class="md-nav__link">
       views:list
     </a>
   </li>
@@ -2627,7 +2599,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/watchdog_delete/" title="watchdog:delete" class="md-nav__link">
+    <a href="../watchdog_delete/" title="watchdog:delete" class="md-nav__link">
       watchdog:delete
     </a>
   </li>
@@ -2639,7 +2611,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/watchdog_list/" title="watchdog:list" class="md-nav__link">
+    <a href="../watchdog_list/" title="watchdog:list" class="md-nav__link">
       watchdog:list
     </a>
   </li>
@@ -2651,7 +2623,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/watchdog_show/" title="watchdog:show" class="md-nav__link">
+    <a href="../watchdog_show/" title="watchdog:show" class="md-nav__link">
       watchdog:show
     </a>
   </li>
@@ -2663,7 +2635,7 @@
 
 
   <li class="md-nav__item">
-    <a href="commands/10.x/watchdog_show-one/" title="watchdog:show-one" class="md-nav__link">
+    <a href="../watchdog_show-one/" title="watchdog:show-one" class="md-nav__link">
       watchdog:show-one
     </a>
   </li>
@@ -2693,6 +2665,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -2703,63 +2677,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
+  <a href="#examples" class="md-nav__link">
+    Examples
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#support" class="md-nav__link">
-    Support
+  <a href="#arguments" class="md-nav__link">
+    Arguments
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#code-of-conduct" class="md-nav__link">
-    Code of Conduct
+  <a href="#options" class="md-nav__link">
+    Options
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#faq" class="md-nav__link">
-    FAQ
-  </a>
-  
-    <nav class="md-nav" aria-label="FAQ">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-does-drush-stand-for" class="md-nav__link">
-    What does Drush stand for?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-do-i-pronounce-drush" class="md-nav__link">
-    How do I pronounce Drush?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#does-drush-have-unit-tests" class="md-nav__link">
-    Does Drush have unit tests?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#credits" class="md-nav__link">
-    Credits
+  <a href="#aliases" class="md-nav__link">
+    Aliases
   </a>
   
 </li>
@@ -2776,7 +2716,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/drush-ops/drush/blob/10.x/README.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/drush-ops/drush/blob/10.x/src/Drupal/Commands/config/ConfigExportCommands.php" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -2784,46 +2724,39 @@
                   
                 
                 
-                  <h1>Introduction</h1>
-                
-                <p>Drush is a command line shell and Unix scripting interface for Drupal. Drush core ships with lots of <a href="commands/10.x/all/">useful commands</a> for interacting with code like modules/themes/profiles. Similarly, it runs update.php, executes SQL queries and DB migrations, and misc utilities like run cron or clear cache. Developers love the <a href="commands/10.x/generate/">generate command</a>, which jump starts your coding project by writing ready-to-customize PHP and YML files. Drush can be extended by <a href="https://www.drupal.org/project/project_module?f[2]=im_vid_3%3A4654">3rd party commandfiles</a>.</p>
-<p><a href="https://packagist.org/packages/drush/drush"><img alt="Latest Stable Version" src="https://poser.pugx.org/drush/drush/v/stable.png" /></a> <a href="https://packagist.org/packages/drush/drush"><img alt="Total Downloads" src="https://poser.pugx.org/drush/drush/downloads.png" /></a> <a href="https://packagist.org/packages/drush/drush"><img alt="License" src="https://poser.pugx.org/drush/drush/license.png" /></a> <a href="https://circleci.com/gh/drush-ops/drush"><img src="https://circleci.com/gh/drush-ops/drush.svg?style=shield"></a> <a href="https://twitter.com/intent/user?screen_name=DrushCli"><img alt="Twitter" src="https://img.shields.io/badge/Twitter-%40DrushCli-blue.svg" /></a></p>
-<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
+                <h1 id="configexport">config:export<a class="headerlink" href="#configexport" title="Permanent link">&para;</a></h1>
+<p>Export Drupal configuration to a directory.</p>
+<h4 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
 <ul>
-<li><a href="https://www.drush.org/install">Installing and Upgrading</a> (<a href="https://docs.drush.org/en/8.x/install/">Drush 8</a>)</li>
-<li><a href="https://www.drush.org/usage">General Documentation</a> (<a href="https://docs.drush.org/en/8.x/install/">Drush 8</a>)</li>
-<li><a href="https://www.drush.org/commands/10.x/all">Drush Commands</a></li>
-<li><a href="https://www.drush.org/api/10.x">API Documentation</a></li>
-<li><a href="https://packagist.org/search/?type=drupal-drush">Drush packages available via Composer</a></li>
-<li><a href="https://www.drupal.org/project/project_module?f[2]=im_vid_3%3A4654&amp;solrsort=ds_project_latest_release+desc">A list of modules that include Drush integration</a></li>
-<li>Drush comes with a <a href="https://github.com/drush-ops/drush/blob/10.x/tests/README.md">full test suite</a> powered by <a href="https://github.com/sebastianbergmann/phpunit">PHPUnit</a>. Each commit gets tested by our CI bots.</li>
+<li><code>drush config:export</code>. Export configuration files to the site's config directory.</li>
+<li><code>drush config:export --destination</code>. Export configuration; Save files in a backup directory named config-export.</li>
 </ul>
-<h2 id="support">Support<a class="headerlink" href="#support" title="Permanent link">&para;</a></h2>
+<h4 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Post support requests to <a href="http://drupal.stackexchange.com/questions/tagged/drush">Drupal Answers</a>. Tag question with 'drush'.</li>
-<li>Report bugs and request features in the <a href="https://github.com/drush-ops/drush/issues">GitHub Drush Issue Queue</a>.</li>
-<li>Use pull requests (PRs) to contribute to Drush.</li>
+<li><strong>[--label]</strong>. A config directory label (i.e. a key in $config_directories array in settings.php).</li>
 </ul>
-<h2 id="code-of-conduct">Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Permanent link">&para;</a></h2>
-<p>The Drush project expects all participants to abide by the <a href="https://www.drupal.org/dcoc">Drupal Code of Conduct</a>.</p>
-<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
-<h4 id="what-does-drush-stand-for">What does <em>Drush</em> stand for?<a class="headerlink" href="#what-does-drush-stand-for" title="Permanent link">&para;</a></h4>
-<p>A: The Drupal Shell.</p>
-<h4 id="how-do-i-pronounce-drush">How do I pronounce Drush?<a class="headerlink" href="#how-do-i-pronounce-drush" title="Permanent link">&para;</a></h4>
-<p>Some people pronounce the <em>dru</em> with a long 'u' like Dr<em>u</em>pal. Fidelity points
-go to them, but they are in the minority. Most pronounce Drush so that it
-rhymes with hush, rush, flush, etc. This is the preferred pronunciation.</p>
-<h4 id="does-drush-have-unit-tests">Does Drush have unit tests?<a class="headerlink" href="#does-drush-have-unit-tests" title="Permanent link">&para;</a></h4>
-<p>Drush has an excellent suite of unit tests. See <a href="https://github.com/drush-ops/drush/blob/10.x/tests/README.md">tests/README.md</a> for more information.</p>
-<h2 id="credits">Credits<a class="headerlink" href="#credits" title="Permanent link">&para;</a></h2>
+<h4 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Maintained by <a href="http://drupal.org/moshe">Moshe Weitzman</a> with much help from the folks listed at <a href="https://github.com/orgs/drush-ops/people">https://github.com/orgs/drush-ops/people</a>.</li>
-<li>Originally developed by <a href="http://bendiken.net">Arto Bendiken</a> for Drupal 4.7.</li>
-<li>Redesigned by <a href="http://unbiskant.org">Franz Heinzmann</a> in May 2007 for Drupal 5.</li>
-<li>Thanks to <a href="https://www.jetbrains.com">JetBrains</a> for <a href="https://www.jetbrains.com/buy/opensource/">supporting this project and open source software</a>.</li>
+<li><strong> --add</strong>. Run <code>git add -p</code> after exporting. This lets you choose which config changes to sync for commit.</li>
+<li><strong> --commit</strong>. Run <code>git add -A</code> and <code>git commit</code> after exporting. This commits everything that was exported without prompting.</li>
+<li><strong> --message=MESSAGE</strong>. Commit comment for the exported configuration. Optional; may only be used with --commit.</li>
+<li><strong> --destination[=DESTINATION]</strong>. An arbitrary directory that should receive the exported files. A backup directory is used when no value is provided.</li>
+<li><strong> --diff</strong>. Show preview as a diff, instead of a change list.</li>
+<li><strong> --format[=FORMAT]</strong>. </li>
 </ul>
-<p><img alt="Drush Logo" src="drush_logo-black.png" />
-<a href="https://www.jetbrains.com/phpstorm/"><img alt="PhpStorm Logo" src="misc/icon_PhpStorm.png" /></a></p>
+<h4 id="aliases">Aliases<a class="headerlink" href="#aliases" title="Permanent link">&para;</a></h4>
+<ul>
+<li>cex</li>
+<li>config-export</li>
+</ul>
+<div class="admonition hint">
+<p class="admonition-title">Legend</p>
+<ul>
+<li>An argument or option with square brackets is optional.</li>
+<li>Any default value is listed at end of arg/option description.</li>
+<li>An ellipsis indicates that an argument accepts multiple values separated by a space.</li>
+</ul>
+</div>
                 
                   
                 
@@ -2844,14 +2777,28 @@ rhymes with hush, rush, flush, etc. This is the preferred pronunciation.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
+          <a href="../config_edit/" title="config:edit" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                config:edit
+              </div>
+            </div>
+          </a>
         
-          <a href="install/" title="Install" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../config_get/" title="config:get" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Install
+                config:get
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -2909,15 +2856,15 @@ rhymes with hush, rush, flush, etc. This is the preferred pronunciation.</p>
       
     </div>
     
-      <script src="assets/javascripts/vendor.d1f5a259.min.js"></script>
-      <script src="assets/javascripts/bundle.d5fec882.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/vendor.d1f5a259.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d5fec882.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: ".",
+          base: "../../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.fae956e7.min.js"
+            worker: "../../../assets/javascripts/worker/search.fae956e7.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
